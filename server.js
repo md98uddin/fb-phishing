@@ -6,6 +6,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 app.use(cors());
+app.options('*', cors());
 
 const User = mongoose.model(
   "User",
